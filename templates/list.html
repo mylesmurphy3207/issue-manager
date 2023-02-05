@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Issues{% endblock title %}
+
+{% block content %} <h1>Issues</h1>
+<h1>Issues</h1>
+<p>
+    <ul>
+        {% for issue in issue_list %} 
+        <li>
+            <a href="{% url 'detail' issue.id " }
+            {{ issue.title }}
+        </li>
+        {% endfor %} 
+    </ul>
+</p>
+{% endblock content %}
